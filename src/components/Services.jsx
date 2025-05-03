@@ -17,9 +17,9 @@ const Services = () => {
             {/*--------------------------------------------- Decorative Divider Line ------------------------------------------*/}
             <div className="w-full h-1 bg-gradient-to-r from-slate-400 via-zinc-400 to-slate-400 mb-16"></div>
             <div className="max-w-6xl mx-auto">
-                <div className="services-list grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="services-list grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:gap-8 xl:gap-7 lg:gap-6 gap-5">
                     {SERVICES_DATA_LIST.map((service, index) => (
-                        <div key={index} className="service-card p-8 bg-white/50 border-4 border-zinc-300 rounded-3xl shadow-xl backdrop-blur-lg hover:shadow-2xl transition duration-500 ease-in-out transform hover:scale-105 hover:border-custom group">
+                        <div key={index} className="service-card 2xl:p-8 xl:p-7 lg:p-6 p-5 bg-white/50 border-4 border-zinc-300 rounded-3xl shadow-xl backdrop-blur-lg hover:shadow-2xl transition duration-500 ease-in-out transform hover:scale-105 hover:border-custom group">
                             <div className="icon mb-6 transform group-hover:scale-125 transition duration-500 ease-in-out">
                                 {/*------------------------------ Lottie Animation -------------------------------------------------*/}
                                 <Lottie options={{

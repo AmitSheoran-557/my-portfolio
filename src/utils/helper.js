@@ -10,23 +10,23 @@ import customAnimAnimation from '../../public/assets/lottie/seo-lottie.json';
 export const HEADER_DATA_LIST = [
     {
         title: "About Me",
-        path: "#about",
+        path: "/about-me",
     },
     {
         title: "contact",
-        path: "#contact",
+        path: "/contact",
     },
     {
         title: "Projects",
-        path: "#projects",
+        path: "/projects",
     },
     {
         title: "Skills",
-        path: "#skills",
+        path: "/skills",
     },
     {
         title: "Services",
-        path: "#services",
+        path: "/services",
     },
 ];
 

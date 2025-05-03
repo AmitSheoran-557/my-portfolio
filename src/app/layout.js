@@ -27,7 +27,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className="lg:pt-[113px] md:pt-[87px] pt-[74px]">
         <Header />
         {children}
         <Footer />

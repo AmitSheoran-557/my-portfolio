@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import CustomHeading from "./common/CustomHeading";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Link from "next/link";
 
 const Introduction = () => {
     useEffect(() => {
@@ -55,35 +56,38 @@ const Introduction = () => {
     return (
         <div className="trigger-section">
             <div className="w-full h-1 bg-zinc-400 pb-4"></div>
-            <div className="relative py-60 bg-gradient-to-b to-zinc-400 from-[#e1e2db] overflow-hidden flex flex-col w-full items-center justify-center px-6">
+            <div className="relative 2xl:py-60 xl:py-40 lg:py-36 md:py-16 py-12 bg-gradient-to-b to-zinc-400 from-[#e1e2db] overflow-hidden flex flex-col w-full items-center justify-center px-5">
                 {/* Decorative Lines */}
-                <div className="absolute top-0 left-20 w-2 h-full bg-zinc-500 decorative-lines"></div>
-                <div className="absolute top-0 right-20 w-2 h-full bg-zinc-500 decorative-lines"></div>
-                <div className="absolute top-10 right-10 w-1/4 h-2 bg-zinc-500 decorative-lines"></div>
-                <div className="absolute bottom-10 left-10 w-1/4 h-2 bg-zinc-500 decorative-lines"></div>
+                <div className="absolute top-0 left-20 w-2 h-full lg:block max-lg:hidden bg-zinc-500 decorative-lines"></div>
+                <div className="absolute top-0 right-20 w-2 h-full lg:block max-lg:hidden bg-zinc-500 decorative-lines"></div>
+                <div className="absolute lg:top-10 top-5 lg:right-10 right-5 lg:w-1/4 w-2/4 lg:h-2 h-1.5 bg-zinc-500 decorative-lines"></div>
+                <div className="absolute lg:bottom-10 bottom-5 lg:left-10 left-5 lg:w-1/4 w-2/4 lg:h-2 h-1.5 bg-zinc-500 decorative-lines"></div>
 
                 {/* Main Content */}
                 <div className="max-w-3xl text-center z-20">
                     <CustomHeading
                         titleOne="Introduction"
-                        customClass="uppercase absolute left-24 top-20 custom-heading"
+                        customClass="uppercase lg:absolute left-28 xl:top-16 top-16 custom-heading"
                     />
-                    <h2 className="lg:text-5xl md:text-4xl text-3xl font-semibold text-zinc-700 mb-6 intro-heading">
-                        Hey, I'm <span className="text-slate-600">Amit</span> 👋
-                    </h2>
-                    <p className="text-lg md:text-xl text-zinc-500 font-medium leading-relaxed intro-subheading">
+                    <CustomHeading
+                        titleOne="Hey, I'm"
+                        titleTwo="Amit"
+                        customClass="intro-heading max-md:text-3xl"
+                    />
+
+                    <p className="sm:text-lg md:text-xl text-zinc-500 font-medium leading-relaxed intro-subheading">
                         A passionate{" "}
                         <span className="text-slate-500 font-semibold">Frontend Developer</span> crafting sleek,
                         responsive web experiences using React, Next.js, Tailwind CSS, and Bootstrap.
                         I love transforming ideas into interactive designs.
                     </p>
                     <div className="mt-8 flex justify-center gap-4 intro-buttons">
-                        <button className="bg-slate-500 cursor-pointer text-white px-5 py-2 rounded-lg hover:bg-[#e1e2db] hover:text-slate-500 border border-transparent hover:border-slate-500 transition-all ease-linear duration-300">
+                        <Link href='/hire-me' className="bg-slate-500 cursor-pointer text-white px-5 py-2 rounded-lg hover:bg-[#e1e2db] hover:text-slate-500 border border-transparent hover:border-slate-500 transition-all ease-linear duration-300">
                             Hire Me
-                        </button>
-                        <button className="hover:bg-slate-500 cursor-pointer border border-slate-500 text-slate-500 px-5 py-2 rounded-lg hover:text-white bg-[#e1e2db] transition-all ease-linear duration-300">
+                        </Link>
+                        <Link href="/projects" className="hover:bg-slate-500 cursor-pointer border border-slate-500 text-slate-500 px-5 py-2 rounded-lg hover:text-white bg-[#e1e2db] transition-all ease-linear duration-300">
                             View Projects
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </div>

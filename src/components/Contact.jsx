@@ -5,7 +5,7 @@ import CustomHeading from "./common/CustomHeading";
 import Swal from "sweetalert2";
 import { useForm } from "react-hook-form";
 
-const ContactSection = () => {
+const Contact = () => {
     const formRef = useRef(null);
     const [loading, setLoading] = useState(false);
     const {
@@ -130,4 +130,4 @@ const ContactSection = () => {
     );
 };
 
-export default ContactSection;
+export default Contact;

@@ -16,8 +16,8 @@ const Hero = () => {
 
     return (
         <div id='hero' className='w-full flex justify-center items-center relative'>
-            <Image className='absolute bottom-0 right-0 max-w-[124px] md:bottom-12' src="/assets/images/webp/dots-img.webp" alt="dots-img" height={62} width={124} />
-            <div className="w-full bg-gradient-to-b from-[#e1e2db] to-slate-400 flex flex-col items-center justify-center lg:pt-48 pt-40 lg:pb-48 md:pb-40 pb-16">
+            <Image className='absolute bottom-0 right-0 lg:top-3 max-w-[124px] md:bottom-12' src="/assets/images/webp/dots-img.webp" alt="dots-img" height={62} width={124} />
+            <div className="w-full bg-gradient-to-b from-[#e1e2db] to-slate-400 flex flex-col items-center justify-center xl:py-36 lg:py-28 max-lg:pb-32 max-md:pb-20 max-sm:pb-16 max-lg:pt-12">
                 <div className="w-full xl:max-w-5xl lg:max-w-3xl md:max-w-3xl p-6 relative flex flex-col md:flex-row items-center md:items-center max-md:!justify-center max-lg:justify-between space-y-4 md:space-y-0 md:space-x-6">
                     <motion.div
                         initial={{ width: 0, }}

@@ -12,7 +12,7 @@ const Footer = () => {
                     <div className="md:w-4/12 px-3 w-full  mx-auto max-md:flex flex-col justify-center items-center">
                         <h4 className="font-semibold text-lg text-white tracking-wider max-md:text-center">© {new Date().getFullYear()} Amit | Frontend Developer</h4>
                         <p className="text-sm text-zinc-200 mt-1 max-md:text-center">
-                            Built with 🩶 using Next.js, <br className="hidden md:block" /> Tailwind CSS & Vercel.
+                            Built with 🩶 using Next.js, <br className="hidden md:block" /> Tailwind CSS, Vercel & GSAP.
                         </p>
                     </div>
 
