@@ -1,7 +1,10 @@
-"use client"
-import { SERVICES_DATA_LIST } from '@/utils/helper';
+"use client";
 import React from 'react';
-import Lottie from 'react-lottie';
+import dynamic from 'next/dynamic';
+import { SERVICES_DATA_LIST } from '@/utils/helper';
+
+//----------------------------------------- Dynamically import Lottie with SSR disabled --------------------------------------
+const Lottie = dynamic(() => import('react-lottie'), { ssr: false });
 
 
 const Services = () => {

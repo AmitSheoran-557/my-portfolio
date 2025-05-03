@@ -28,9 +28,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Suspense>
-          <Header />
-        </Suspense>
+        <Header />
         {children}
         <Footer />
       </body>

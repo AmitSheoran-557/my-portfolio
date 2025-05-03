@@ -7,20 +7,7 @@ const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
-        const handleOverflow = () => {
-            if (isOpen && window.innerWidth < 1025) {
-                document.body.classList.add("overflow-hidden");
-            } else {
-                document.body.classList.remove("overflow-hidden");
-            }
-        };
-
-        handleOverflow();
-        window.addEventListener("resize", handleOverflow);
-        return () => {
-            document.body.classList.remove("overflow-hidden");
-            window.removeEventListener("resize", handleOverflow);
-        };
+        document.body.style.overflow = isOpen ? "hidden" : "auto";
     }, [isOpen]);
 
 
@@ -44,7 +31,7 @@ const Header = () => {
                                         {/* Normal Link */}
                                         <Link
                                             href={item.path}
-                                            onClick={() => setIsOpen(!isOpen)}
+                                            onClick={() => setIsOpen(false)}
                                             className="block transition-all duration-500 ease-in-out transform-3d group-hover:-translate-y-full"
                                         >
                                             <span className="font-medium lg:text-lg flex items-center lg:text-white">
@@ -55,7 +42,7 @@ const Header = () => {
                                         {/* Hover Link */}
                                         <Link
                                             href={item.path}
-                                            onClick={() => setIsOpen(!isOpen)}
+                                            onClick={() => setIsOpen(false)}
                                             className="block absolute top-full max-lg:hidden left-0 transition-all duration-500 ease-in-out transform group-hover:translate-y-[-110%]"
                                         >
                                             <span className="font-medium lg:text-lg flex items-center lg:text-white">
