@@ -9,9 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "emailjs-com": "^3.2.0",
+    "framer-motion": "^12.9.4",
+    "gsap": "^3.13.0",
+    "lottie-web": "^5.12.2",
+    "next": "15.3.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.3.1"
+    "react-hook-form": "^7.56.1",
+    "react-lottie": "^1.2.10",
+    "react-simple-typewriter": "^5.0.1",
+    "sweetalert2": "^11.19.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
