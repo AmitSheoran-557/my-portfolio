@@ -1,15 +1,15 @@
 "use client";
-
 import React, { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import CustomHeading from "./common/CustomHeading";
 import { ABOUT_ME_CARDS_DATA } from "@/utils/helper";
 
-gsap.registerPlugin(ScrollTrigger);
 
 const AboutMe = () => {
     useEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+
         gsap.from(".decorative-line", {
             scrollTrigger: {
                 trigger: "#about",

@@ -4,10 +4,10 @@ import CustomHeading from "./common/CustomHeading";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
-
 const Introduction = () => {
     useEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
+
         const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: ".trigger-section",
@@ -50,7 +50,6 @@ const Introduction = () => {
                 ease: "power3.out",
 
             }, "-=0.8");
-
     }, []);
 
     return (

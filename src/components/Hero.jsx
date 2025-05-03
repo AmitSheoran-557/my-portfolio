@@ -1,20 +1,17 @@
 "use client"
 import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import { Typewriter } from 'react-simple-typewriter';
 import { motion } from 'framer-motion';
-const Hero = () => {
 
+const Hero = () => {
     useEffect(() => {
         const tl = gsap.timeline({ defaults: { duration: 1.2, ease: "power3.out" } });
 
         tl.from(".profile-img", { x: -200, opacity: 0, rotate: -360 })
             .from(".profile-name", { y: 50, opacity: 0 }, "-=0.5")
-            .from(".profile-bio", { y: 50, opacity: 0 }, "-=0.5");
-
     }, []);
 
     return (

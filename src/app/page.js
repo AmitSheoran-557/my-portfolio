@@ -5,18 +5,18 @@ import Introduction from "@/components/Introduction";
 import Projects from "@/components/Projects";
 import Services from "@/components/Services";
 import Skills from "@/components/Skills";
+import { Suspense } from "react";
 
 export default function Home() {
   return (
-    <>
+    <Suspense>
       <Hero />
-      {/* <Introduction />
+      <Introduction />
       <AboutMe />
-      <Projects /> */}
+      <Projects />
       <Services />
       <Skills />
       <Contact />
-
-    </>
+    </Suspense>
   );
 }

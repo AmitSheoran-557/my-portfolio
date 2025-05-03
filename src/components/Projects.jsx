@@ -8,10 +8,10 @@ import { RightArrow } from "@/utils/icons";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
 
 const Projects = () => {
     useEffect(() => {
+        gsap.registerPlugin(ScrollTrigger);
         const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: ".projects",

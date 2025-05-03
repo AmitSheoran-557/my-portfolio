@@ -17,12 +17,12 @@ const Header = () => {
 
         handleOverflow();
         window.addEventListener("resize", handleOverflow);
-
         return () => {
             document.body.classList.remove("overflow-hidden");
             window.removeEventListener("resize", handleOverflow);
         };
     }, [isOpen]);
+
 
     return (
         <div className='bg-white fixed z-50 top-0 backdrop-blur-lg w-full'>

@@ -144,3 +144,15 @@ export const SERVICES_DATA_LIST = [
         animation: customAnimAnimation, // Lottie animation for Custom Animations
     },
 ];
+
+export const SKILL_DATA = [
+    { name: "HTML", level: "Expert" },
+    { name: "CSS", level: "Advanced" },
+    { name: "JavaScript", level: "Intermediate" },
+    { name: "React", level: "Advanced" },
+    { name: "Next.js", level: "Advanced" },
+    { name: "Gsap", level: "Intermediate" },
+    { name: "Git", level: "Advanced" },
+    { name: "Git HUb", level: "Advanced" },
+    { name: "TailwindCSS", level: "Advanced" },
+];

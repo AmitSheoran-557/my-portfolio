@@ -1,18 +1,9 @@
-// components/Skills.js
+"use client";
 import React from "react";
 import CustomHeading from "./common/CustomHeading";
+import { SKILL_DATA } from "@/utils/helper";
 
-const skillsData = [
-    { name: "HTML", level: "Expert" },
-    { name: "CSS", level: "Advanced" },
-    { name: "JavaScript", level: "Intermediate" },
-    { name: "React", level: "Advanced" },
-    { name: "Next.js", level: "Advanced" },
-    { name: "Gsap", level: "Intermediate" },
-    { name: "Git", level: "Advanced" },
-    { name: "Git HUb", level: "Advanced" },
-    { name: "TailwindCSS", level: "Advanced" },
-];
+
 
 const Skills = () => {
     return (
@@ -23,7 +14,7 @@ const Skills = () => {
             <div className="w-full h-1 bg-gradient-to-r from-slate-400 via-zinc-400 to-slate-400 mb-16"></div>
             <div className="max-w-6xl mx-auto">
                 <div className="skills-list grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {skillsData.map((skill, index) => (
+                    {SKILL_DATA.map((skill, index) => (
                         <div key={index} className="skill-card relative lg:p-4 p-3 bg-gray-400 rounded-md shadow-lg hover:shadow-2xl transition duration-300 ease-in-out border-4 border-transparent hover:border-custom group" >
                             {/* Decorative Overlay Box for emphasis */}
                             <div className="absolute inset-0 bg-gradient-to-r from-slate-400 to-zinc-400 opacity-30 group-hover:opacity-0 transition-opacity duration-300 rounded-3xl"></div>
